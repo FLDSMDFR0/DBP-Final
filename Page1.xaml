@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page1">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#7C615C ">
+                <Grid ColumnDefinitions="*,*">
+
+                    <StackLayout Grid.Column="0">
+                        <Image Source="https://i.ibb.co/sbZvPVC/pngegg.png"
+                       Margin="0,35,0,5"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                       <Label x:Name="F_nombre"
+                       FontAttributes="Italic"
+                       HorizontalOptions="Center"
+                       FontSize="40"
+                       TextColor="White"/>
+                        <Label x:Name="F_ocupacion"
+                       HorizontalOptions="Center"
+                       FontSize="20"
+                       TextColor="White"/>
+                    </StackLayout>
+                </Grid>
+                <Frame BackgroundColor="#E1D8D6 "
+                   Margin="20"
+                   CornerRadius="20"
+                   HasShadow="False">
+                    <StackLayout>
+                        <Label Text="Perfil" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label x:Name="F_edad"/>
+                                <Label x:Name="F_perfil"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Contacto" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label x:Name="F_email"/>
+                                <Label x:Name="F_telefono"/>
+                                <Label x:Name="F_pais"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Idiomas" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Español: Nativo"/>
+                                <Label x:Name="F_level"/>
+                                <Label Text="Frances: Intermedio (B2)"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Aptitudes" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Inteligencia Emocional"/>
+                                <Label Text="Espíritu crítico"/>
+                                <Label Text="Trabajo en equipo"/>
+                                <Label Text="Capacidad analítica"/>
+                                <Label Text="Habilidades físicas"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Habilidades" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Acondicionamiento físico"/>
+                                <Label Text="Pack office"/>
+                            </StackLayout>
+                        </Frame>
+                        <Label Text="Otros intereses" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Creador de Yincanas"/>
+                                <Label Text="Paseos ecologicos grupales"/>
+                                <Label Text="Lectura grupal en inglés"/>
+                            </StackLayout>
+                        </Frame>
+                        <Button  Text="Regresar" x:Name="btnregresar" Clicked="btnregresar_Clicked" VerticalOptions="CenterAndExpand"  HorizontalOptions="Center"/>
+                        <Button  Text="Enviar"  x:Name="btnenviar" Clicked="btnenviar_Clicked" VerticalOptions="CenterAndExpand"  HorizontalOptions="Center"/>
+                        
+                        <Label Text="Experiencia Laboral" FontAttributes="Bold"/>
+                        <Frame>
+                            <StackLayout>
+                                <Label Text="Trabajador Social" FontAttributes="Bold"/>
+                                <Label Text="México DF, | 2022 - Actualmente" FontAttributes="Italic"/>
+                                <Label Text="Trabajador Social" FontAttributes="Bold"/>
+                                <Label Text="México DF, | 2020 - 2022" FontAttributes="Italic"/>
+                                <Label Text="Trabajador Social(Prácticas)" FontAttributes="Bold"/>
+                                <Label Text="Zaragoza, España | 2019 - 2020" FontAttributes="Italic"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
